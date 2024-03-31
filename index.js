@@ -39,6 +39,10 @@ const sayilar = [
 function KareninAlani(kenaruzunlugu) {
   return kenaruzunlugu * kenaruzunlugu;
 }
+const kenarUzunlugu = 10; // Karenin kenar uzunluğu
+const alan = KareninAlani(kenarUzunlugu); // Karenin alanını hesapla
+
+console.log("Karenin Alanı:", alan);
 
 /* (Oto test yok) Yukarıdaki KareninAlani fonksiyonunu kenar uzunluğu = 10 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
@@ -50,9 +54,14 @@ function KareninAlani(kenaruzunlugu) {
 	4. Hesaplanan çemberin çevresi döndürülecektir.
 */
 
-function CemberinCevresi(/* kodlar buraya */) {
-  /* kodlar buraya */
+function CemberinCevresi(yaricap) {
+  const pi = 3.14;
+  return 2 * pi * yaricap;
 }
+const yaricap = 5;
+const cevre = CemberinCevresi(yaricap);
+
+console.log("Çemberin çevresi:", cevre);
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
